@@ -106,9 +106,9 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python3 codebase_analyzer.py --instruction "Explain the overall architecture and main components"
-  python3 codebase_analyzer.py --instruction "I'm getting a bug in user authentication. Help me understand the auth flow across the codebase"
-  python3 codebase_analyzer.py --instruction "I need to add a new API endpoint. Show me the existing patterns and where to implement it"
+  python3 codeingest.py --instruction "Explain the overall architecture and main components"
+  python3 codeingest.py --instruction "I'm getting a bug in user authentication. Help me understand the auth flow across the codebase"
+  python3 codeingest.py --instruction "I need to add a new API endpoint. Show me the existing patterns and where to implement it"
         """
     )
     
