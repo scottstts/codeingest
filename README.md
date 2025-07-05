@@ -52,27 +52,34 @@ coverage/
 You can reference certain directoreis and files too inside your instruction.
 
 **Advanced Options:**
-```bash
-# Enable verbose output for debugging
-python3 codeingest.py --instruction "your question" --verbose
 
-# Get help
-python3 codeingest.py --help
-```
+`python3 codeingest.py --instruction "your question" --verbose`
+
+`python3 codeingest.py --help`
 
 **When to use**:
+
 • **Debugging complex issues** that span multiple files or modules
+
 • **Understanding code architecture** and component relationships  
+
 • **Planning new features** and ensuring consistency with existing patterns
+
 • **Refactoring guidance** that considers system-wide impact
+
 • **Dependency analysis** and identifying potential bottlenecks
+
 • **Code review** and architectural assessment
+
 • **Any task requiring full codebase context** rather than snippet-based analysis
 
 **Example commands**:
-• `python3 codeingest.py --instruction "Analyze the authentication flow and identify why sessions are timing out randomly"`
-• `python3 codeingest.py --instruction "I need to add caching. Show me existing patterns and suggest where to implement Redis integration"`
-• `python3 codeingest.py --instruction "Explain the database schema relationships and how they map to the API endpoints"`
+
+* `python3 codeingest.py --instruction "Analyze the authentication flow and identify why sessions are timing out randomly"`
+
+* `python3 codeingest.py --instruction "I need to add caching. Show me existing patterns and suggest where to implement Redis integration"`
+
+* `python3 codeingest.py --instruction "Explain the database schema relationships and how they map to the API endpoints"`
 ```
 
 ---
