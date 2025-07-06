@@ -38,49 +38,7 @@ dist/
 coverage/
 ```
 
-3. Set up the system prompt for your coding tool (like Cursor or Claude Code) with below provided system prompt.
-
-## System Prompt for AI Coding Agents
-
-**Important:** Add this to your AI coding agent's system prompt (Cursor, Claude Code, etc.) to enable codebase analysis capabilities:
-
-```markdown
-**Codebase Analysis Tool Available**: You have access to a powerful local codebase analysis tool called `codeingest` that provides comprehensive understanding of entire codebases using Repomix + Google Gemini. This tool is essential for complex debugging, architecture understanding, and planning tasks that require full codebase context rather than isolated code snippets. Use it when you need to understand interdependencies, trace issues across multiple files, or plan changes that could have ripple effects.
-
-**Usage**: `python3 codeingest.py --instruction "your detailed question/request"`
-
-You can reference certain directoreis and files too inside your instruction.
-
-**Advanced Options:**
-
-`python3 codeingest.py --instruction "your question" --verbose`
-
-`python3 codeingest.py --help`
-
-**When to use**:
-
-• **Debugging complex issues** that span multiple files or modules
-
-• **Understanding code architecture** and component relationships  
-
-• **Planning new features** and ensuring consistency with existing patterns
-
-• **Refactoring guidance** that considers system-wide impact
-
-• **Dependency analysis** and identifying potential bottlenecks
-
-• **Code review** and architectural assessment
-
-• **Any task requiring full codebase context** rather than snippet-based analysis
-
-**Example commands**:
-
-* `python3 codeingest.py --instruction "Analyze the authentication flow and identify why sessions are timing out randomly"`
-
-* `python3 codeingest.py --instruction "I need to add caching. Show me existing patterns and suggest where to implement Redis integration"`
-
-* `python3 codeingest.py --instruction "Explain the database schema relationships and how they map to the API endpoints"`
-```
+3. Set up the system prompt for your coding tool (like Cursor or Claude Code) with the provided system prompt in [Cursor System Prompt](coding_agent_system_prompt.md).
 
 ---
 

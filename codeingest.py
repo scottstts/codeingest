@@ -62,8 +62,9 @@ ANALYSIS APPROACH:
 - Focus on providing actionable, specific insights with file references
 
 RESPONSE FORMAT:
-- Be concise but comprehensive
+- Be detailed and comprehensive
 - Include specific file paths and references when relevant
+- Quote the code snippets in fence blocks when relevant
 - Highlight important relationships and dependencies
 - Provide clear, actionable recommendations
 - Structure your response logically (overview → specific analysis → recommendations)
@@ -105,10 +106,8 @@ def main():
         description="Codebase Analysis Tool - Analyze entire codebases using Repomix and Gemini",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-Examples:
-  python3 codeingest.py --instruction "Explain the overall architecture and main components"
+Example:
   python3 codeingest.py --instruction "I'm getting a bug in user authentication. Help me understand the auth flow across the codebase"
-  python3 codeingest.py --instruction "I need to add a new API endpoint. Show me the existing patterns and where to implement it"
         """
     )
     
