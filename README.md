@@ -1,4 +1,4 @@
-# Codebase Analyzer 🔍
+# CodeIngest Codebase Analyzer 🔍
 
 A local dev tool that provides codebase analysis for AI coding agents.
 
