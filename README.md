@@ -25,7 +25,7 @@ conda activate your_env && pip install google-genai python-dotenv
 
 ## Setup
 
-1. Put `codeingest.py` in your codebase
+1. Put `codeingest.py` in your codebase, and add it to `.gitignore`
 
 2. Set up `.env` with API key, a `.repomixignore` to omit files you don't want to include:
 
